@@ -1,12 +1,17 @@
 require 'benchmark'
 require 'bigdecimal/math'
 
-def prime?(number)
+def prime1?(number)
+  if number <= 1
+    return false
+  end
   prime = true
-    for r in 2..Math.sqrt(number).to_i
-      if (number % r == 0)
+  i = 2
+    while i <= number
+      if (number % i == 0)
         prime = false
       end
+      i += 1
     end
     return prime
 end
