@@ -1,14 +1,15 @@
 require 'benchmark'
 require 'bigdecimal/math'
-#def prime?(number)
-#  prime = true
-#    for r in 2..Math.sqrt(number).to_i
-#      if (number % r == 0)
-#        prime = false
-#      end
-#    end
-#    return prime
-#end
+
+def prime?(number)
+  prime = true
+    for r in 2..Math.sqrt(number).to_i
+      if (number % r == 0)
+        prime = false
+      end
+    end
+    return prime
+end
 
 def prime?(number)
   if number <= 1
