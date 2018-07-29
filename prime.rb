@@ -9,7 +9,7 @@ require 'bigdecimal/math'
 #    end
 #    return prime
 #end
-puts Benchmark.measure
+
 def prime?(number)
   if number <= 1
     return false
@@ -24,3 +24,5 @@ def prime?(number)
     end
     return prime
 end
+
+puts Benchmark.measure
