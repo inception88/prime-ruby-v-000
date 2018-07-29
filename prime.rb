@@ -1,3 +1,5 @@
+require 'benchmark'
+require 'bigdecimal/math'
 #def prime?(number)
 #  prime = true
 #    for r in 2..Math.sqrt(number).to_i
