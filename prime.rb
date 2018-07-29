@@ -31,5 +31,5 @@ def prime?(number)
     return prime
 end
 
-puts Benchmark.measure {prime1?(1000000000)}
-puts Benchmark.measure {prime?(1000000000)}
+puts Benchmark.measure {prime1?(100000000)}
+puts Benchmark.measure {prime?(100000000)}
